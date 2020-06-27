@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		B510CD1C24A0E9230052B1E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B510CD1A24A0E9230052B1E8 /* LaunchScreen.storyboard */; };
 		B510CD2724A0E9230052B1E8 /* DiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B510CD2624A0E9230052B1E8 /* DiceTests.swift */; };
 		B510CD3224A0E9230052B1E8 /* DiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B510CD3124A0E9230052B1E8 /* DiceUITests.swift */; };
+		B594EE1C24A78F7500093DF6 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = B594EE1B24A78F7500093DF6 /* Introspect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B594EE1C24A78F7500093DF6 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +154,9 @@
 			dependencies = (
 			);
 			name = Dice;
+			packageProductDependencies = (
+				B594EE1B24A78F7500093DF6 /* Introspect */,
+			);
 			productName = Dice;
 			productReference = B510CD0C24A0E9200052B1E8 /* Dice.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +229,9 @@
 				Base,
 			);
 			mainGroup = B510CD0324A0E9200052B1E8;
+			packageReferences = (
+				B594EE1A24A78F7500093DF6 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = B510CD0D24A0E9200052B1E8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -590,6 +598,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B594EE1A24A78F7500093DF6 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/timbersoftware/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B594EE1B24A78F7500093DF6 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B594EE1A24A78F7500093DF6 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B510CD0424A0E9200052B1E8 /* Project object */;
 }
